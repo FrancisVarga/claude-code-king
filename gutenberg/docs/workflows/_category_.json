@@ -1,0 +1,8 @@
+{
+  "label": "Workflows",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Development workflows and best practices for the monorepo."
+  }
+}
