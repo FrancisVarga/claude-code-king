@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Claude Code King',
+  tagline: 'Modern shadcn/ui Monorepo with Next.js 15, React 19, and Turborepo',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://franc-dev.github.io',
+  url: 'https://francisVarga.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/claude-code-king/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'franc-dev', // Usually your GitHub org/user name.
+  organizationName: 'FrancisVarga', // Usually your GitHub org/user name.
   projectName: 'claude-code-king', // Usually your repo name.
 
   // Deployment branch for GitHub Pages
@@ -49,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Wolfschanze-Berlin/claude-code-king/tree/main/gutenberg/',
+            'https://github.com/FrancisVarga/claude-code-king/tree/main/gutenberg/',
         },
         blog: {
           showReadingTime: true,
@@ -60,7 +60,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Wolfschanze-Berlin/claude-code-king/tree/main/gutenberg/',
+            'https://github.com/FrancisVarga/claude-code-king/tree/main/gutenberg/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -73,13 +73,18 @@ const config: Config = {
     ],
   ],
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Claude Code King',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Claude Code King Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -87,11 +92,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/franc-dev/claude-code-king',
+          href: 'https://github.com/FrancisVarga/claude-code-king',
           label: 'GitHub',
           position: 'right',
         },
@@ -104,8 +109,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
+            },
+            {
+              label: 'Architecture',
+              to: '/docs/architecture/overview',
             },
           ],
         },
@@ -135,12 +144,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/franc-dev/claude-code-king',
+              href: 'https://github.com/FrancisVarga/claude-code-king',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Claude Code King. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
