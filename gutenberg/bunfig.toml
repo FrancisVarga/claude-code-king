@@ -1,0 +1,3 @@
+[install]
+threads = 16
+network-concurrency = 128
