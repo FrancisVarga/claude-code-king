@@ -1,0 +1,18 @@
+{
+    "name": "@repo/config-manager",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "scripts": {
+        "dev": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
+        "@types/node": "^20.14.12",
+        "typescript": "^5.5.4"
+    }
+}
