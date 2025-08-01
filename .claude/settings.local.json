@@ -4,7 +4,10 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(touch:*)",
+      "Bash(npm ci:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": []
   }
